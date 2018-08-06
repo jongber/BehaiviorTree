@@ -43,7 +43,7 @@ namespace AI.Contexts.Explorer
 
         public override Node.State OnReceiveResult(int childIndex, Node.State result)
         {
-            Console.WriteLine($"{childIndex} received");
+            Console.WriteLine($"Parallel {childIndex} received");
 
             childrenResult.Add(result);
             if (childrenResult.Count == this.ParallelNode.Children.Count)

@@ -15,12 +15,12 @@ namespace AI
     {
         public static void Main(string[] args)
         {
-            ParallelNode node = new ParallelNode();
-            node.Children.Add(new LeafNode());
-            node.Children.Add(new LeafNode());
-            node.Children.Add(new LeafNode());
+            SequenceNode node = new SequenceNode();
             var childNode = new ParallelNode();
             node.Children.Add(childNode);
+            node.Children.Add(new LeafNode());
+            node.Children.Add(new LeafNode());
+            node.Children.Add(new LeafNode());
             childNode.Children.Add(new LeafNode());
             childNode.Children.Add(new LeafNode());
             childNode.Children.Add(new LeafNode());
